@@ -1,0 +1,185 @@
+/* ## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.order-container {
+  max-width: 450px;
+  margin: 100px auto;
+  background-color: #fff;
+  border-radius: 11px;
+  overflow: hidden;
+  box-shadow: 0px 15px 20px rgba(31, 47, 86, 0.1);
+}
+
+.order-img {
+  width: 100%;
+}
+
+.order-content {
+  padding: 36px 42px;
+  display: flex;
+  flex-direction: column;
+  color: hsl(223, 47%, 23%);
+  gap: 24px;
+}
+
+.order-description {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-heading {
+  font-size: 27px;
+  font-weight: 900;
+
+  margin-bottom: 16px;
+}
+
+.order-description p {
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6;
+}
+
+.display-plan {
+  display: grid;
+  grid-template-columns: 20fr 60fr 20fr;
+  gap: 10px;
+  align-items: center;
+  padding: 20px 24px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 11px;
+}
+
+.annual-plan-info {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.annual-plan-info h3 {
+  font-size: inherit;
+  font-weight: 900;
+}
+
+.annual-plan-info p {
+  color: hsl(224, 23%, 55%);
+}
+
+.display-plan a {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+
+.display-plan a:active,
+.display-plan a:hover {
+  color: hsl(245, 70%, 65%);
+  text-decoration: none;
+}
+
+.btn:link,
+.btn:visited {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.payment:link,
+.payment:visited {
+  color: #fff;
+  background-color: hsl(245, 75%, 52%);
+  padding: 16px 15px;
+  border-radius: 11px;
+  box-shadow: 0 20px 20px hsla(245, 75%, 52%, 0.2);
+}
+
+.payment:active,
+.payment:hover {
+  background-color: hsl(245, 70%, 65%);
+  box-shadow: 0 20px 20px hsla(245, 70%, 65%, 0.2);
+}
+
+.cancel:link,
+.cancel:visited {
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel:active,
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/********************** 
+**** MEDIA QUERIES ****
+***********************/
+
+@media (max-width: 475px) {
+  .order-container {
+    margin: 100px 30px;
+  }
+  .order-content {
+    padding: 30px;
+  }
+  .order-description {
+    width: 100%;
+  }
+
+  .display-plan {
+    padding: 18px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 15px;
+  }
+
+  .display-plan {
+    gap: 13px;
+  }
+
+  .annual-plan-info {
+    font-size: 14px;
+  }
+
+  .display-plan a {
+    font-size: 13px;
+  }
+}
