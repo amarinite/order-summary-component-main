@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/order-summary-component-with-css-grid-and-flexbox-SJu72tdr9)
-- Live Site URL: [Add live site URL here](https://amarinite.github.io/order-summary-component-main/)
+- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-with-css-grid-and-flexbox-SJu72tdr9](https://www.frontendmentor.io/solutions/order-summary-component-with-css-grid-and-flexbox-SJu72tdr9)
+- Live Site URL: [https://amarinite.github.io/order-summary-component-main/](https://amarinite.github.io/order-summary-component-main/)
 
 ## My process
 
